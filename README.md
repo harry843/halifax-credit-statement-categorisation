@@ -4,7 +4,7 @@ I love how online banks like Monzo categorise your payments into Spend Groups (e
 ## Description
 This repository contains a python script which transforms this unstructured pdf data into a structured csv format, and asks ChatGPT to categorise your payements into 11 Spend Groups (following the Monzo model):
 ```
-"Savings","Rent","Eating out","Transport","Groceries","Shopping","Holidays","Entertainment","Personal Care","General","Charity"
+categories=["Savings","Rent","Eating out","Transport","Groceries","Shopping","Holidays","Entertainment","Personal Care","General","Charity"]
 ```
 
 For those fellow Halifax customers who want to understand their credit spending behaviour, but are limited by Halifax's archaic system, I hope you will use this code for yourselves to take ownership of your financial data. This code does the following:
