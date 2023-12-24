@@ -2,9 +2,9 @@
 I love how online banks like Monzo categorise your payments into Spend Groups (e.g. Eating out). Unfortunately, I bank with Halifax. What's even worse, Halifax credit card bank statements are all in pdf format. This makes personal spend analysis a nightmare. I suffered this pain and wrote this code, so that you don't have to!
 
 ## Description
-This repository contains a python script which transforms this unstructured pdf data into a structured csv format, and asks ChatGPT to categorise your payements into 11 Spend Groups (following the Monzo model):
+This repository contains a python script which transforms this unstructured pdf data into a structured csv format, and asks ChatGPT to categorise your payments into 11 Spend Groups (following the Monzo model):
 ```
-categories=["Savings","Rent","Eating out","Transport","Groceries","Shopping","Holidays","Entertainment","Personal Care","General","Charity"]
+categories = ["Savings","Rent","Eating out","Transport","Groceries","Shopping","Holidays","Entertainment","Personal Care","General","Charity"]
 ```
 
 For those fellow Halifax customers who want to understand their credit spending behaviour, but are limited by Halifax's archaic system, I hope you will use this code for yourselves to take ownership of your financial data. This code does the following:
@@ -14,8 +14,8 @@ For those fellow Halifax customers who want to understand their credit spending 
 3. Outputs the categorised transaction data as a CSV
 
 ## Pre-requisites
-* A terminal where you can run a python script e.g. Jupyter Notebook / Visual Studio Code
-* You have an OpenAI account (if opened in the last 3 months you can run API queries free of charge, otherwise you'll need to provide payment information to OpenAI - with the default set-up I've gone for, this will cost <1p per run)
+* A terminal where you can run a python script e.g. Jupyter Notebook / Visual Studio Code. If you don't have this on your computer, [download Anaconda](https://www.anaconda.com/download)
+* You have an [OpenAI account](https://chat.openai.com/auth/login) (if opened in the last 3 months you can run API queries free of charge, otherwise you'll need to provide payment information to OpenAI - with the default set-up I've gone for, this will cost <1p per run)
 * Dependencies: requirements can be found in the requirements.txt file, and can be loaded via pip.
 
 ## Getting started
@@ -33,9 +33,16 @@ pip install -r requirements.txt
 ```
 
 ### create your OpenAI personal access token
-
+[Check out this guide](https://medium.com/geekculture/a-simple-guide-to-chatgpt-api-with-python-c147985ae28)
 
 ### make a .env file to store this token
+Create a new file called openai.env in the same directory as the credit_statement_payment_categorisation.py file (if you followed the steps above, this will be the folder called halifax-credit-statement-categorisation). The .env file extension may not be recognised by default depending on your operating system, so if you get asked what application to open it with, choose Notepad.
 
-### run the script!
-Now you are ready to run the script!
+Inside the file, replace the dummy access token text after the equals sign with the OpenAI access token you created above:
+```
+OPENAI_ACCESS_TOKEN=dummyaccesstoken
+```
+Now save the file.
+
+### run the script
+Now you are ready to run the script - good job!
