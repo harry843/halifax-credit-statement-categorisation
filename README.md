@@ -45,7 +45,11 @@ OPENAI_ACCESS_TOKEN=dummyaccesstoken
 Now save the file.
 
 ### run the script
-Now you are ready to run the script - good job!
+Once you have run the script, you will be prompted to enter the folder path where you have saved your pdf Halifax credit card statements. In file explorer, navigate to this directory and copy the full path (e.g. C:\Users\YourName\Documents\Finances\Statements)
+
+Paste this path into the input text box on screen and press Enter.
+
+Now the script will work its magic - nice job for getting this far!
 
 ## Contact
 
