@@ -46,3 +46,8 @@ Now save the file.
 
 ### run the script
 Now you are ready to run the script - good job!
+
+## Contact
+
+This repo is currently maintained by [@harry843](https://github.com/harry843) - raise an issue or a pull request if you have any suggestions, or just contact me on my [LinkedIn](https://www.linkedin.com/in/harry-kelleher/)
+
