@@ -1,4 +1,8 @@
 # Categorise your Halifax Credit Card Transactions into Spend Groups
+[Python 3.8](https://img.shields.io/python_3.8-green)
+[ChatGPT API](https://img.shields.io/ChatGPT_API-black)
+[Halifax](https://img.shields.io/Halifax_Bank-blue)
+
 I love how online banks like Monzo categorise your payments into Spend Groups (e.g. Eating out). Unfortunately, I bank with Halifax. What's even worse, Halifax credit card bank statements are all in pdf format. This makes personal spend analysis a nightmare. I suffered this pain and wrote this code, so that you don't have to!
 
 ## Description
