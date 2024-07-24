@@ -1,0 +1,13 @@
+{
+    
+    "env_path" : "openai.env",
+
+    "credit_statement_location": "Enter the path to the folder containing your pdf Halifax credit statements",
+
+    "debit_categories" : ["Savings","Rent","Eating out","Transport","Groceries","Shopping","Holidays","Entertainment","Personal Care","General","Charity"],
+
+    "first_prompt": "I have the following list of transaction descriptions, which I want you to map to a category from the list of categories provided.\nHere is the list of categories: {}\nHere is the list of transaction descriptions: {}\nI don't want you to provide me the code for doing this. I want you to actually do the mapping, using the data provided.\nPlease give me your response as a dictionary object, in the form: 'Transaction Description':'Category'\n",
+    
+    "follow_up_prompt": "That's perfect! Can you repeat this task for the next {} transaction descriptions, returning an output with no duplicates?\nHere are the transaction descriptions: {}\n"
+
+}

@@ -21,6 +21,7 @@ For those fellow Halifax customers who want to understand their credit spending 
 * A terminal where you can run a python script e.g. Jupyter Notebook / Visual Studio Code. If you don't have this on your computer, [download Anaconda](https://www.anaconda.com/download)
 * You have an [OpenAI account](https://chat.openai.com/auth/login) (if opened in the last 3 months you can run API queries free of charge, otherwise you'll need to provide payment information to OpenAI - with the default set-up I've gone for, this will cost <1p per run)
 * Dependencies: requirements can be found in the requirements.txt file, and can be loaded via pip.
+* You have downloaded your Halifax credit card statements in .pdf format and stored them all in the same folder in your local directory
 
 ## Getting started
 ### clone the repo
@@ -47,6 +48,10 @@ Inside the file, replace the dummy access token text after the equals sign with 
 OPENAI_ACCESS_TOKEN=dummyaccesstoken
 ```
 Now save the file.
+
+### populate the reference.json file
+This is the config file which will contain the local paths to your .env file, credit card statements, debit categories you want to use and the ChatGPT prompts to be fed into the API.
+Populate this file with the relevant information.
 
 ### run the script
 Once you have run the script, you will be prompted to enter the folder path where you have saved your pdf Halifax credit card statements. In file explorer, navigate to this directory and copy the full path (e.g. C:\Users\YourName\Documents\Finances\Statements)
